@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Oreo Delights</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Oreo Delights</h1>
+            <nav>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <h2>Indulge in the Irresistible Taste of Oreo</h2>
+        <p>Experience a world of flavors crafted with passion and perfection.</p>
+        <a href="#products" class="cta-button">Explore Products</a>
+    </section>
+
+    <section id="products" class="product-section">
+        <h2>Our Oreo selection</h2>
+        <div class="product-gallery">
+            <div class="product" onclick="openModal('Oreo Flavor 1', 'oreo_product1.jpg', 'Delicious description of Oreo Flavor 1.')">
+                <img src="CGD-Oreo-main-banner-MOB_1.jpg" alt="Oreo Flavor 1">
+                <h3>Classic Oreo, everyones favorite cookie!</h3>
+                <p>Price: $10 per 15 cookies</p>
+            </div>
+            <div class="product" onclick="openModal('Oreo Flavor 2', 'oreo_product2.jpg', 'Scrumptious details about Oreo Flavor 2.')">
+                <img src="c8e7074f-7868-4a5f-83f7-375ff5621377.edf303f03dca54f9a4b250385a4008f9.jpg" alt="Oreo Flavor 2">
+                <h3>If Chocolate isnt your thing why not try our GOLDEN OREO</h3>
+                <p>Price: $12 per 15 cookies</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Oreo Delights</h2>
+        <p>We are passionate about crafting the finest Oreo products. Oreo Delights is dedicated to bringing joy to your taste buds with our delicious creations. Every Oreo is baked with care and perfection to ensure a delightful experience for our customers.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to place an order? Reach out to us through the contact form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Oreo Delights. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image" alt="Modal Image">
+        <div id="modal-caption"></div>
+    </div>
+</body>
+</html>
